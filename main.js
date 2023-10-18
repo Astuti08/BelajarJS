@@ -70,9 +70,9 @@ function tampilkanData() {
 
         checkbox.addEventListener("change", function () {
             if (checkbox.checked) {
-                textElement.style.textDecoration = "line-through"; // Apply strikethrough
+                textElement.style.textDecoration = "line-through"; 
             } else {
-                textElement.style.textDecoration = "none"; // Remove strikethrough
+                textElement.style.textDecoration = "none"; 
             }
         });
 
