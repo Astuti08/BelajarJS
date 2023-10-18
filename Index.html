@@ -10,19 +10,21 @@
         <input type="text" id="input_form"value="">
         <button id="tombol_form">Tekan</button>
     </form>
-    <p>Hasil teks<span id="hasil"></span></p>
+    <p>Hasil teks<span id="hasil"></span></p> -->
 
-    <script>
+    <!-- <script>
         console.log("Hello world")
-    </script> -->
+    </script>  -->
 
     <h1>To-do List</h1>
-    <form action="">
-        <input type="text" id="input" name="Membentuk kelompok">
-        <button id="input">Submit</button>
+    <form id="myForm">
+        <input type="text" id="nama" name="nama">
+        <button type="button" onclick="tampilkanData()">Submit</button>
     </form>
-
     
+    <div id="dataTampil">
+        <ul id="daftarData"></ul>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

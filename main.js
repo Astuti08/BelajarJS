@@ -47,3 +47,35 @@
 //console.log(isi)
 //p.inert-HTML == isi
 
+function tampilkanData() {
+        var inputNama = document.getElementById("nama").value;
+        var daftarData = document.getElementById("daftarData");
+        var li = document.createElement("li");
+
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = "dataCheckbox";
+        li.appendChild(checkbox);
+
+        var textElement = document.createElement("span"); // Create a <span> for the text
+        textElement.innerText = inputNama; // Set the text content
+        li.appendChild(textElement);
+
+        var deleteButton = document.createElement("button");
+        deleteButton.appendChild(document.createTextNode("X"));
+        deleteButton.onclick = function () {
+            li.remove();
+        };
+        li.appendChild(deleteButton);
+
+        checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+                textElement.style.textDecoration = "line-through"; // Apply strikethrough
+            } else {
+                textElement.style.textDecoration = "none"; // Remove strikethrough
+            }
+        });
+
+        daftarData.appendChild(li);
+        document.getElementById("nama").value = "";
+    }
