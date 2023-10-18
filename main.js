@@ -57,8 +57,8 @@ function tampilkanData() {
         checkbox.name = "dataCheckbox";
         li.appendChild(checkbox);
 
-        var textElement = document.createElement("span"); // Create a <span> for the text
-        textElement.innerText = inputNama; // Set the text content
+        var textElement = document.createElement("span"); 
+        textElement.innerText = inputNama; 
         li.appendChild(textElement);
 
         var deleteButton = document.createElement("button");
